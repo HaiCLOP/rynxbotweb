@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYNX BOT - Pricing</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffa500;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .pricing h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .pricing p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .pricing .pricing-table {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .pricing .pricing-plan {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing .pricing-plan h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .pricing .pricing-plan p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .pricing .pricing-plan .price {
+            font-size: 32px;
+            color: #ffa500;
+            margin: 20px 0;
+        }
+
+        .pricing .pricing-plan .order-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffa500;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .pricing .pricing-plan .order-btn:hover {
+            background-color: #e59400;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="RYNX BOT Logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pricing">
+            <h2>Our Pricing</h2>
+            <p>We offer affordable pricing for our custom Discord bot development services. All plans come with an additional $10 for hosting.</p>
+            <div class="pricing-table">
+                <div class="pricing-plan">
+                    <h3>Basic Plan</h3>
+                    <p>Includes basic bot features such as moderation, simple commands, and more.</p>
+                    <div class="price">$10</div>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Standard Plan</h3>
+                    <p>Includes all basic features plus advanced commands, integrations, and more customization.</p>
+                    <div class="price">$30</div>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+                <div class="pricing-plan">
+                    <h3>Premium Plan</h3>
+                    <p>Includes all standard features plus unique, tailor-made solutions for your specific needs.</p>
+                    <div class="price">$50</div>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RYNX BOT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
