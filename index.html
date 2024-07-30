@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="RxBot.png">
     <title>RYNX BOT - Custom Discord Bots</title>
+    <meta name="description" content="Want a custom discord bot? No Problem! We Provide custom discord bot at cheap prices.">
     <style>
         /* Global Styles */
         body, html {
@@ -58,20 +60,30 @@
 
         /* Hero Section */
         .hero {
-            background-color: #262626;
+            background: url('background.gif') no-repeat center center/cover;
             color: #fff;
             text-align: center;
             padding: 100px 20px;
         }
 
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+ 
         .hero h1 {
             font-size: 48px;
             margin: 0;
+            position: relative;
+            z-index: 2;
         }
 
         .hero p {
             font-size: 24px;
             margin: 10px 0 20px;
+            position: relative;
+            z-index: 2;
         }
 
         .hero a {
@@ -83,6 +95,8 @@
             font-size: 18px;
             border-radius: 5px;
             transition: background-color 0.3s;
+            position: relative;
+            z-index: 2;
         }
 
         .hero a:hover {
@@ -142,7 +156,7 @@
 <body>
     <header>
         <nav>
-            <img src="logo.png" alt="RYNX BOT Logo" class="logo">
+            <img src="RxBot.png" alt="RYNX BOT Logo" class="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -157,9 +171,11 @@
 
     <main>
         <section class="hero">
-            <h1>Welcome to RYNX BOT</h1>
-            <p>Premium Custom Discord Bots Tailored to Your Needs</p>
-            <a href="services.html">Get Started</a>
+            <div class="hero-content">
+                <h1 id="typing-text"></h1>
+                <p>Premium Custom Discord Bots Tailored to Your Needs</p>
+                <a href="services.html">Get Started</a>
+            </div>
         </section>
 
         <section class="about">
@@ -181,5 +197,23 @@
     <footer>
         <p>&copy; 2024 RYNX BOT. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const typingText = document.getElementById("typing-text");
+            const text = "Welcome to RxBot Site";
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    typingText.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 100);
+                }
+            }
+
+            type();
+        });
+    </script>
 </body>
 </html>
